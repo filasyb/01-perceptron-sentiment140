@@ -34,7 +34,7 @@ The implementation avoids frameworks like PyTorch/TensorFlow to emphasize **core
 ---
 
 ## Project Structure
-
+```
 01-perceptron-sentiment140/
 │
 ├── config/
@@ -57,7 +57,7 @@ The implementation avoids frameworks like PyTorch/TensorFlow to emphasize **core
 │
 ├── README.md
 └── requirements.txt
-
+```
 This structure ensures **clarity, decoupling, and maintainability**, inspired by templates used in production ML workflows.
 
 ---
@@ -96,10 +96,10 @@ Configured in `local.yaml`.
 
 ### **3. Model Training**
 The Perceptron updates weights using Rosenblatt’s rule:
-
+```
 w = w + lr * (y_true - y_pred) * x
 b = b + lr * (y_true - y_pred)
-
+```
 Hyperparameters defined in `local.yaml`:
 
 ```yaml
