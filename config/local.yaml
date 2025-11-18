@@ -1,0 +1,22 @@
+project_name: "perceptron_sentiment140"
+
+paths:
+  raw_data: "data/01_raw/training.1600000.processed.noemoticon.csv"
+  preprocessed_data: "data/02_preprocessed/sentiment140_sample.csv"
+  features_dir: "data/03_features"
+
+dataset:
+  sample_size_pos: 5000
+  sample_size_neg: 5000
+
+preprocessing:
+  remove_urls: true
+  remove_mentions: true
+  remove_hashtags: true
+  lowercase: true
+
+model:
+  learning_rate: 0.01
+  epochs: 10
+  random_seed: 42
+

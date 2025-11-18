@@ -1,0 +1,71 @@
+# ============================================
+# PYTHON / GENERAL
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+*.log
+*.tmp
+*.swp
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# IDE settings
+.vscode/
+.idea/
+*.code-workspace
+
+# ============================================
+# JUPYTER NOTEBOOKS
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_convert/
+*.nbconvert/
+*/.ipynb_checkpoints/*
+
+# ============================================
+# DATA FILES (optional keep raw but ignore heavy)
+# Do NOT ignore sample or processed unless heavy.
+# ============================================
+*.csv~
+*.tsv~
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.jsonl
+
+# Ignore large model outputs (optional)
+data/01_raw/*
+data/03_features/*.npy
+data/03_features/*.txt
+
+# ============================================
+# SYSTEM FILES
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# LOGS / TEMP
+# ============================================
+*.out
+*.err
+*.bak
+
+# ============================================
+# PROJECT-SPECIFIC
+# ============================================
+# Ignore the FULL Sentiment140 dataset
+data/01_raw/training.1600000.processed.noemoticon.csv
+
+# Allow processed sample (important)
+!data/02_preprocessed/sentiment140_sample.csv
